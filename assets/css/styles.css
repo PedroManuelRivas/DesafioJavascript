@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#flujogramas {
+    text-align: center;
+    background-color: grey;
+}
+
+#aritmeticas {
+    text-align: center;
+    background-color: beige;
+}
+
+#temperatura {
+    text-align: center;
+    background-color: grey;
+}
+
+#calculodias {
+    text-align: center;
+    background-color: beige;
+}
+#sumaprom {
+    text-align: center;
+    background-color: grey;
+}
