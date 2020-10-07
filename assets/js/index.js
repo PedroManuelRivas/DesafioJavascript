@@ -57,42 +57,38 @@ function pedirTemp() {
     convertir(temp, conv)
 }
 
-/*EJERCICIO 4 Funcion que convierte dias
+//EJERCICIO 4 Funcion que convierte cifra ingresada a años, meses, semanas, dias
 function calculo(m1) {
-    if (m1 == 365) {
-        let year = 1
-        alert('La cifra ingresada corresponde a ' + year + " año")
-    }
-    else if (m1 > 365) {
-        let ano = 365
-        let week = 7
-        let totAno = (m1 / ano)
-        let sema = (ano + m1) - totAno
-        let 
-        alert('La cifra ingresada corresponde a ' + totAno + " año")
-    }
-
-    else{
-        alert('valor no permitido')
-    }
+    const mes = 30
+    const anio = 365
+    const sem = 7
+    let years = Math.trunc(m1 / anio)
+    let aniosEnDias = anio * years
+    let months = Math.trunc((m1 - aniosEnDias) / mes)
+    let mesesEnDias = mes * months
+    let weeks = Math.trunc((m1 - aniosEnDias - mesesEnDias) / sem)
+    let semanasEnDias = sem * weeks
+    let dias = Math.trunc(m1 - aniosEnDias - mesesEnDias - semanasEnDias)
+    alert("El valor ingresado es " + years + " año(s), " + months + " mes(es), " + weeks + " semana(as), "+ dias + " día(s)")
 }
-function calcDias() {
-    let calc = +prompt('Ingrese valor para convertir en años, semanas, días')
+function ingreso() {
+    let calc = +prompt("Ingrese una cifra para ser calculada en Años, meses, semanas y dias")
     calculo(calc)
-}*/
-
-//EJERCICIO 5 Funcion que suma digitos ingresados por usuario
-
-function sumatoria(a1, a2, a3, a4, a5){
-    
 }
 
-function soliciarNumeros() {
-    let num1 = +prompt('Ingrese primer número (mayor a 0)')
-    let num2 = +prompt('Ingrese segundo número (mayor a 0)')
-    let num3 = +prompt('Ingrese segundo número (mayor a 0)')
-    let num4 = +prompt('Ingrese segundo número (mayor a 0)')
-    let num5 = +prompt('Ingrese segundo número (mayor a 0)')
-    alert('La sumatoria de todos los numeros es ' + sum + ' y el promedio es ' + prom)
-//Fin de Funcion 5 que suma digitos ingresados por usuario
+//EJERCICIO 5 Funcion sumatoria y promedio
+function sumProm(a1, a2, a3, a4, a5) {
+    const prome = 5
+    let sum = (a1 + a2 + a3 + a4 + a5)
+    let prom = sum / prome
+    alert("La sumatoria de los números ingresados es: " + sum + ", y el promedio de los mismos es: " + prom)
+}
 
+function promedio() {
+    let m1 = +prompt("Ingrese primer valor: ")
+    let m2 = +prompt("Ingrese segundo valor: ")
+    let m3 = +prompt("Ingrese tercer valor: ")
+    let m4 = +prompt("Ingrese cuarto valor: ")
+    let m5 = +prompt("Ingrese quinto valor: ")
+    sumProm(m1, m2, m3, m4, m5)
+}
